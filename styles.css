@@ -314,7 +314,56 @@ img { max-width: 100%; display: block; }
   color: var(--gray);
 }
 .contact-line a:hover { color: var(--gold); }
-.map-link { margin-top: 32px; }
+
+.action-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.social-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(247, 245, 241, 0.1);
+}
+.social-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray);
+}
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--white);
+  transition: color 0.3s ease;
+}
+.social-link svg { flex-shrink: 0; }
+.social-link:hover { color: var(--gold); }
+
+/* Placeholder links awaiting a real URL from the client */
+[data-pending] { position: relative; }
+[data-pending]::after {
+  content: "wklej link";
+  position: absolute;
+  top: -18px;
+  left: 0;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+  opacity: 0.8;
+  white-space: nowrap;
+}
 
 .map-wrap {
   aspect-ratio: 4/5;
