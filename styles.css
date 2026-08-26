@@ -182,35 +182,6 @@ img { max-width: 100%; display: block; }
   height: 100%;
   object-fit: cover;
 }
-
-.hero-art {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background:
-    radial-gradient(ellipse at 50% 30%, var(--charcoal) 0%, var(--near-black) 55%, var(--black) 100%);
-}
-.hero-art::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(201, 162, 75, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(201, 162, 75, 0.05) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-.hero-art svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: var(--gold);
-  stroke-width: 1.4;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  opacity: 0.55;
-}
 .hero-overlay {
   position: absolute;
   inset: 0;
