@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Have a nice pizza – pizzeria na Bielanach, ul. Szekspira 1 | Warszawa</title>
+<meta name="description" content="Have a nice pizza – pizzeria na warszawskich Bielanach, ul. Szekspira 1. Pizza 32 cm na mozzarelli fior di latte, focaccia 50 cm, zupy, sałatki i desery. Codziennie 12:00–22:00. Tel. 503 166 866.">
+<meta name="theme-color" content="#D2382B">
+<!-- TODO: ustawić docelowy adres strony (canonical i og:url) po wyborze domeny -->
+<!-- <link rel="canonical" href="https://TODO-domena.pl/"> -->
+
+<!-- Open Graph -->
+<meta property="og:type" content="restaurant">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Have a nice pizza">
+<meta property="og:title" content="Have a nice pizza – pizzeria na Bielanach">
+<meta property="og:description" content="Pizza 32 cm na mozzarelli fior di latte i focaccia 50 cm. ul. Szekspira 1, Warszawa. Codziennie 12:00–22:00.">
+<!-- TODO: og:url i og:image (zdjęcie 1200×630 px, np. img/og.jpg) – wymagane pełne adresy URL -->
+<!-- <meta property="og:url" content="https://TODO-domena.pl/"> -->
+<!-- <meta property="og:image" content="https://TODO-domena.pl/img/og.jpg"> -->
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Dane strukturalne schema.org. TODO: dodać "url", "image", "sameAs" (Facebook/Instagram) i "priceRange" po potwierdzeniu -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Have a nice pizza",
+  "servesCuisine": ["Pizza", "Włoska"],
+  "telephone": "+48503166866",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ul. Szekspira 1",
+    "postalCode": "01-913",
+    "addressLocality": "Warszawa",
+    "addressRegion": "mazowieckie",
+    "addressCountry": "PL"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "12:00",
+    "closes": "22:00"
+  }],
+  "hasMenu": "#menu",
+  "acceptsReservations": false,
+  "hasMap": "https://www.google.com/maps/search/?api=1&query=Have+a+nice+pizza+Szekspira+1+Warszawa"
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#menu">Przejdź do menu</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="Have a nice pizza – strona główna">
+      <span class="logo-dot" aria-hidden="true"></span>Have a nice pizza
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Otwórz menu nawigacji">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav" aria-label="Główna nawigacja">
+      <a href="#menu">Menu</a>
+      <a href="#wyroznia">Co nas wyróżnia</a>
+      <a href="#opinie">Opinie</a>
+      <a href="#kontakt">Kontakt</a>
+      <a href="tel:+48503166866" class="nav-phone">503 166 866</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- 1. HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">Bielany · ul. Szekspira 1</p>
+        <h1 id="hero-title">Have a <span class="accent">nice</span> pizza</h1>
+        <p class="lead">Pizza 32&nbsp;cm na mozzarelli fior di latte i focaccia 50&nbsp;cm. Codziennie od 12:00 do 22:00.</p>
+        <p class="open-status" data-open-status aria-live="polite"></p>
+        <div class="hero-cta">
+          <a href="#zamow" class="btn btn-primary">Zamów z dostawą</a>
+          <a href="tel:+48503166866" class="btn btn-outline">Odbiór osobisty – zadzwoń</a>
+        </div>
+        <p class="hero-note">503 166 866 · Miłego dnia i smacznego!</p>
+      </div>
+      <div class="hero-media">
+        <!-- TODO: zamienić placeholder na zdjęcie z img/ (np. img/hero.jpg) z alt="..." -->
+        <div class="ph ph-hero" role="img" aria-label="Miejsce na zdjęcie: pizza Margherita z bliska, prosto z pieca">
+          <span>Zdjęcie: pizza Margherita z bliska, prosto z pieca</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. MENU -->
+  <section id="menu" class="section" aria-labelledby="menu-title">
+    <div class="container">
+      <p class="eyebrow">Menu</p>
+      <h2 id="menu-title">Pizza 32&nbsp;cm na fior di latte</h2>
+      <p class="section-lead">Każda pizza na mozzarelli fior di latte.</p>
+
+      <ul class="menu-grid" role="list">
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Margherita"><span>Zdjęcie: Margherita</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Margherita</h3><p class="price">34&nbsp;zł</p></div>
+            <p class="ingredients">sos pomidorowy, fior di latte, bazylia, parmezan</p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Cotto"><span>Zdjęcie: Cotto</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Cotto</h3><p class="price">51&nbsp;zł</p></div>
+            <p class="ingredients">fior di latte, szynka cotto, oliwki kalamata, pieczarki</p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Pollo"><span>Zdjęcie: Pollo</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Pollo</h3><p class="price">49&nbsp;zł</p></div>
+            <p class="ingredients">grillowany kurczak, suszone pomidory, pesto bazyliowe</p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Ventricina"><span>Zdjęcie: Ventricina</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Ventricina</h3><p class="price">51&nbsp;zł</p></div>
+            <p class="ingredients">ventricina, czerwona cebula, jalapeño</p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Salami Mellow"><span>Zdjęcie: Salami Mellow</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Salami Mellow</h3><p class="price">52&nbsp;zł</p></div>
+            <!-- TODO: skład Salami Mellow -->
+            <p class="ingredients todo">Skład: [DO UZUPEŁNIENIA]</p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Bianka"><span>Zdjęcie: Bianka</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Bianka</h3><p class="price">51&nbsp;zł</p></div>
+            <!-- TODO: pełny skład Bianki (potwierdzone: sos biały, pancetta) -->
+            <p class="ingredients">sos biały, pancetta <span class="todo">+ reszta składu [DO UZUPEŁNIENIA]</span></p>
+          </div>
+        </li>
+        <li class="pizza-card">
+          <div class="ph ph-card" role="img" aria-label="Miejsce na zdjęcie pizzy Vege Delight"><span>Zdjęcie: Vege Delight</span></div>
+          <div class="pizza-body">
+            <div class="pizza-head"><h3>Vege Delight</h3><p class="price">49&nbsp;zł</p></div>
+            <!-- TODO: skład Vege Delight -->
+            <p class="ingredients todo">Skład: [DO UZUPEŁNIENIA]</p>
+          </div>
+        </li>
+      </ul>
+
+      <h3 class="extras-title">A do tego</h3>
+      <!-- TODO: pozycje i ceny focacci, zup, sałatek i deserów -->
+      <ul class="extras" role="list">
+        <li><strong>Focaccia 50&nbsp;cm</strong><span class="todo">rodzaje i cena [DO UZUPEŁNIENIA]</span></li>
+        <li><strong>Zupy</strong><span class="todo">rodzaje i ceny [DO UZUPEŁNIENIA]</span></li>
+        <li><strong>Sałatki</strong><span class="todo">rodzaje i ceny [DO UZUPEŁNIENIA]</span></li>
+        <li><strong>Desery</strong><span class="todo">rodzaje i ceny [DO UZUPEŁNIENIA]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ZAMÓWIENIA -->
+  <section id="zamow" class="section order" aria-labelledby="order-title">
+    <div class="container order-inner">
+      <div>
+        <h2 id="order-title">Zamów i miłego dnia!</h2>
+        <p>Dowozimy przez Pyszne.pl i Uber Eats. Wolisz odbiór osobisty? Zadzwoń, a przygotujemy zamówienie do odbioru.</p>
+      </div>
+      <div class="order-buttons">
+        <!-- TODO: potwierdzić, że to oficjalny link do lokalu na Pyszne.pl -->
+        <a href="https://www.pyszne.pl/menu/have-a-nice-pizza" class="btn btn-light" target="_blank" rel="noopener">Pyszne.pl <span class="sr-only">(otwiera się w nowej karcie)</span></a>
+        <!-- TODO: wstawić link do lokalu na Uber Eats (teraz przycisk nie prowadzi nigdzie) -->
+        <a href="#" class="btn btn-light" data-todo-link aria-disabled="true">Uber Eats [link DO UZUPEŁNIENIA]</a>
+        <a href="tel:+48503166866" class="btn btn-yellow">Zadzwoń: 503 166 866</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CO NAS WYRÓŻNIA -->
+  <section id="wyroznia" class="section" aria-labelledby="usp-title">
+    <div class="container">
+      <p class="eyebrow">Co nas wyróżnia</p>
+      <h2 id="usp-title">Dwie rzeczy, których się trzymamy</h2>
+      <div class="usp-grid">
+        <article class="usp">
+          <div class="usp-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48"><circle cx="24" cy="24" r="20" fill="#FBF5E9" stroke="currentColor" stroke-width="3"/><circle cx="17" cy="20" r="4" fill="currentColor"/><circle cx="30" cy="17" r="3" fill="currentColor"/><circle cx="28" cy="30" r="4.5" fill="currentColor"/></svg>
+          </div>
+          <h3>Mozzarella fior di latte</h3>
+          <p>Każdą pizzę robimy na mozzarelli fior di latte, od Margherity po Ventricinę.</p>
+        </article>
+        <article class="usp">
+          <div class="usp-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="48" height="48"><rect x="4" y="14" width="40" height="20" rx="8" fill="#FBF5E9" stroke="currentColor" stroke-width="3"/><circle cx="14" cy="22" r="2" fill="currentColor"/><circle cx="24" cy="26" r="2" fill="currentColor"/><circle cx="34" cy="22" r="2" fill="currentColor"/><path d="M4 42h40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M4 39v6M44 39v6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Focaccia 50&nbsp;cm</h3>
+          <p>Pieczemy focaccię o długości 50&nbsp;cm – w sam raz do dzielenia się.</p>
+        </article>
+      </div>
+      <!-- TODO: zdjęcie focacci 50 cm -->
+      <div class="ph ph-wide" role="img" aria-label="Miejsce na zdjęcie: focaccia 50 cm na desce"><span>Zdjęcie: focaccia 50 cm na desce</span></div>
+    </div>
+  </section>
+
+  <!-- 4. OPINIE -->
+  <section id="opinie" class="section section-alt" aria-labelledby="reviews-title">
+    <div class="container">
+      <p class="eyebrow">Opinie</p>
+      <h2 id="reviews-title">Co mówią goście</h2>
+      <!-- TODO: wkleić 3 prawdziwe opinie z Google (treść, imię autora, ocena) – za zgodą/zgodnie z regulaminem Google -->
+      <div class="reviews">
+        <figure class="review">
+          <p class="stars todo" aria-label="Ocena do uzupełnienia">★ [DO UZUPEŁNIENIA]</p>
+          <blockquote><p>[DO UZUPEŁNIENIA – treść opinii z Google]</p></blockquote>
+          <figcaption>— [Imię autora DO UZUPEŁNIENIA], Google</figcaption>
+        </figure>
+        <figure class="review">
+          <p class="stars todo" aria-label="Ocena do uzupełnienia">★ [DO UZUPEŁNIENIA]</p>
+          <blockquote><p>[DO UZUPEŁNIENIA – treść opinii z Google]</p></blockquote>
+          <figcaption>— [Imię autora DO UZUPEŁNIENIA], Google</figcaption>
+        </figure>
+        <figure class="review">
+          <p class="stars todo" aria-label="Ocena do uzupełnienia">★ [DO UZUPEŁNIENIA]</p>
+          <blockquote><p>[DO UZUPEŁNIENIA – treść opinii z Google]</p></blockquote>
+          <figcaption>— [Imię autora DO UZUPEŁNIENIA], Google</figcaption>
+        </figure>
+      </div>
+      <p class="center"><a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Have+a+nice+pizza+Szekspira+1+Warszawa" target="_blank" rel="noopener">Zobacz wszystkie opinie w Google <span class="sr-only">(otwiera się w nowej karcie)</span></a></p>
+    </div>
+  </section>
+
+  <!-- 5. KONTAKT -->
+  <section id="kontakt" class="section" aria-labelledby="contact-title">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <p class="eyebrow">Kontakt</p>
+        <h2 id="contact-title">Wpadnij na Bielany</h2>
+        <dl>
+          <dt>Adres</dt>
+          <dd>ul. Szekspira 1<br>01-913 Warszawa</dd>
+          <dt>Godziny</dt>
+          <dd>Codziennie 12:00–22:00</dd>
+          <dt>Telefon</dt>
+          <dd><a class="phone-big" href="tel:+48503166866">503 166 866</a></dd>
+        </dl>
+        <p class="small">Jesteśmy z Wami od maja 2025. Miłego dnia!</p>
+        <!-- TODO: linki do Facebooka/Instagrama po potwierdzeniu profili -->
+        <p><a class="link" href="https://www.facebook.com/p/Have-a-nice-pizza-61584303032797/" target="_blank" rel="noopener">Facebook <span class="sr-only">(otwiera się w nowej karcie)</span></a> · <span class="todo">Instagram [DO UZUPEŁNIENIA]</span></p>
+      </div>
+      <div class="map-wrap">
+        <iframe
+          title="Mapa Google: Have a nice pizza, ul. Szekspira 1, Warszawa"
+          src="https://www.google.com/maps?q=Have+a+nice+pizza,+Szekspira+1,+01-913+Warszawa&amp;output=embed"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p><strong>Have a nice pizza</strong> · ul. Szekspira 1, 01-913 Warszawa · <a href="tel:+48503166866">503 166 866</a></p>
+    <p>© <span data-year></span> Have a nice pizza. Miłego dnia!</p>
+  </div>
+</footer>
+
+<!-- Przyklejony przycisk na telefonie -->
+<a href="#zamow" class="sticky-order" aria-label="Zamów pizzę">Zamów 🍕</a>
+
+<script src="script.js" defer></script>
+</body>
+</html>
